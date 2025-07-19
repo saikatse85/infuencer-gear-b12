@@ -1,0 +1,125 @@
+*{
+    margin: 0 auto;
+}
+body{
+    font-family:"Poppins", sans-serif;;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+    margin: 0 auto;
+}
+.display-grid{
+    display: grid;
+}
+.influencer-button{
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 24px;
+    color: #FFFFFF;
+}
+.star-rating{
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    max-width: 127px;
+    margin: 0px;
+    font-size: 14px;
+}
+.star{
+    color: #FB8200;
+    padding: 0px;
+    margin: 0px;
+    font-size: 10px;
+}
+/* header style */
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* menu styles */
+.menu-container{
+    justify-content: space-between;
+    gap: 350px;
+    margin-top: 50px;
+    max-height: 52px;
+}
+.influencer-logo{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.navbar-menu{
+    gap: 30px;
+}
+.navbar-menu li{
+    list-style: none;
+    padding: 5px;
+}
+.navbar-menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+/* banner styles */
+.banner-container{
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+}
+.influencer-tile{
+    font-weight: 700;
+    color: #3A3A3A;
+    font-size: 3.25rem;
+}
+.influencer-banner-left{
+    max-width: 580px;
+}
+.influencer-description{
+    color: #3A3A3A;
+    max-width: 485px;
+    margin: 0;
+}
+.influencer-banner-right{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: none;
+    padding: 28px 17.5px;
+}
+.influencer-banner-right img{
+    max-width: 470px;
+    max-height: 470px;
+}
+.preebook-now{
+    margin-top: 20px;
+}
+
+/* sponsor partners */
+.sponsor-partner{
+    grid-template-columns: repeat(7,1fr);
+    max-width: 1110px;
+    margin-top: 70px;
+}
+
+/* popular collection  */
+.popular-collection-container{
+    max-width: 1110px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.popular-collections{
+    grid-template-columns: repeat(3,1fr);
+}
+.popular-collections-card{
+    max-width: 330px;
+    max-height: 476px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+.popular-collections-card img{
+    border-radius: 20px;
+}
