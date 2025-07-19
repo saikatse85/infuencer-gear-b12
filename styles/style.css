@@ -7,6 +7,7 @@ body{
 /* shared styles */
 .display-flex{
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
@@ -192,3 +193,109 @@ body{
 .footer-social-media-icon{
     color: white;
 }
+
+/* media responsive */
+@media screen and (max-width:360px) {
+    .menu-container, .navbar-menu, .banner-container{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .featured-products{
+        flex-direction: column-reverse;
+    }
+    .navbar-menu{
+            visibility: hidden;
+    }
+    .influencer-banner-left{
+        text-align: center;
+        align-items: center;
+    }
+    .sponsor-partner{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .popular-collections{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .influencer-banner-right img{
+        max-width: 100%;
+    }
+    .featured-description{
+        text-align: center;
+        align-items: center;
+    }
+
+    }
+
+    @media screen and (min-width:361px) and (max-width:576px) {
+    .menu-container, .navbar-menu, .banner-container{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .featured-products{
+        flex-direction: column-reverse;
+    }
+    .navbar-menu{
+            visibility: hidden;
+    }
+    .influencer-banner-left{
+        text-align: center;
+        align-items: center;
+    }
+    .sponsor-partner{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .popular-collections{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .influencer-banner-right img{
+        max-width: 100%;
+    }
+    .featured-description{
+        text-align: center;
+        align-items: center;
+    }
+
+    }
+
+    @media screen and (min-width:577px) and (max-width:992px){
+    .menu-container, .navbar-menu, .banner-container{
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+    .featured-products{
+        flex-direction: column-reverse;
+    }
+    .influencer-banner-left{
+        text-align: center;
+        align-items: center;
+    }
+    .sponsor-partner{
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+    .popular-collections{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .influencer-banner-right img{
+        max-width: 100%;
+    }
+    .featured-description{
+        text-align: center;
+        align-items: center;
+    }
+
+    }
